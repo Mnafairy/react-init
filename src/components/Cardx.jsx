@@ -7,4 +7,4 @@ const Cardx = ({ data }) => {
     </div>
   );
 };
-export default Cardx;
+export default Cardx; 

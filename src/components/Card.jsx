@@ -1,6 +1,8 @@
 import "../styles/card.css";
-const Card = ({ data }) => {
-  console.log("data:", data);
+const Card = (props) => {
+  console.log("props:", props);
+  const cardData = props.news;
+  // console.log("props news:", props.news);
   return (
     // <div>
     //   <p>{data.title}</p>
@@ -14,22 +16,19 @@ const Card = ({ data }) => {
     //     ))}
     //   </div>
     // </div>
-    // { data.map((e)=>(
     <div className="card">
       <div className="card-img">
         <span>
           Унших<i className="fa-solid fa-arrow-right"></i>
         </span>
       </div>
-      <p>{props.title}</p>
+      <p>{cardData.title}</p>
       <div className="comment-box">
         <i className="fas fa-share color-light-gray"></i>
-        <span>{data.share}</span>
-        <i className="fa-solid fa-comment"></i> <span>{data.comment}</span>
+        <span>{cardData.share}</span>
+        <i className="fa-solid fa-comment"></i> <span>{cardData.comment}</span>
       </div>
     </div>
-    // ))}
   );
 };
 export default Card;
-// [{}, {}, {}];

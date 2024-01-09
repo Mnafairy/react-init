@@ -5,7 +5,7 @@ export default function Header() {
     <div className="header">
       <div className="header_left">
         <div>
-          <img src="http://127.0.0.1:5500/images/gogo-logo.png"/>
+          <img src="" />
         </div>
         <ul className="header_list">
           <li>
@@ -21,7 +21,7 @@ export default function Header() {
             Хэв маяг<i className="fas fa-chevron-down text-12"></i>
           </li>
           <li>English</li>
-          <li class="search">
+          <li className="search">
             <i className="fa-solid fa-magnifying-glass"></i>
           </li>
         </ul>

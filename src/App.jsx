@@ -1,6 +1,7 @@
 import Cards from "./components/Cards";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
+import { useState } from "react";
 import "./styles/global.css";
 
 // const AcceptCard = (
@@ -15,9 +16,13 @@ import "./styles/global.css";
 // );
 export default function App() {
   // const age = 19;
+  const [count, setCount] = useState(0);
   return (
     <div>
       {/* {age > 18 ? AcceptCard : DeclineCard} */}
+      <button onClick={() => setCount(count + 1)}>+</button>
+      {count}
+      <button onClick={() => setCount(count - 1)}>-</button>
       <Header />
       <Cover />
       <Cards />

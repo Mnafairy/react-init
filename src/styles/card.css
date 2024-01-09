@@ -1,0 +1,44 @@
+.card {
+  width: 250px;
+  height: 280px;
+  cursor: pointer;
+}
+.card-img {
+  width: 250px;
+  height: 175px;
+  background-image: url("https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2024/01/314540-09012024-1704789596-1027316673-urttsagaan_barilga_barilgiinhog_-21.jpg");
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.card-img:hover {
+  background-size: 130%;
+}
+.card-img span {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.305);
+  cursor: pointer;
+}
+.card p {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.comment-box i {
+  font-size: 10px;
+  color: rgba(128, 128, 128, 0.5);
+  margin-right: 10px;
+}
+.card-img:hover span {
+  opacity: 1;
+  border-radius: inherit;
+}

@@ -1,0 +1,106 @@
+.cover {
+  width: 1100px;
+  height: 350px;
+  display: flex;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.05), 3%, white);
+}
+.cover-left {
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 35px;
+}
+.cover-top-button {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgba(170, 4, 4, 0.741),
+    rgb(255, 123, 0)
+  );
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cover-top-button:hover {
+  padding: 10px 25px;
+}
+.cover-left h2 {
+  margin: 10px 0 20px 0;
+  font-size: 26px;
+  line-height: 1.3;
+  cursor: pointer;
+}
+.cover-left h2:hover {
+  opacity: 0.7;
+}
+.cover-left p {
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  color: grey;
+  line-height: 1.3;
+  cursor: pointer;
+}
+.cover-card-comment {
+  display: flex;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.486);
+  gap: 10px;
+  margin-top: 30px;
+}
+.share-button {
+  width: 80px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.comment-button {
+  padding: 7px 14px;
+}
+.share-button:hover {
+  width: 100px;
+  background-color: white;
+  transition: all 0.3s;
+}
+.share-button:hover i {
+  color: rgba(128, 128, 128, 0.486);
+  rotate: 40deg;
+  transition: all 0.5s ease-in-out;
+}
+.cover-card {
+  width: 50%;
+  height: 100%;
+}
+.cover-card-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2024/01/314529-09012024-1704780343-1517153258-capital_bank.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cover-card-img span {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.305);
+}
+.cover-card:hover .cover-card-img {
+  background-size: 110%;
+  border-radius: 5px;
+}
+.cover-card:hover .cover-card-img span {
+  opacity: 1;
+  border-radius: inherit;
+}

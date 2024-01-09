@@ -1,4 +1,4 @@
-const Cardx = ({ data }) => {
+const Card = ({ data }) => {
   console.log("inside card component: ", data);
   return (
     <div>
@@ -7,4 +7,4 @@ const Cardx = ({ data }) => {
     </div>
   );
 };
-export default Cardx; 
+export default Card; 

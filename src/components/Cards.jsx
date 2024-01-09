@@ -1,5 +1,5 @@
 import React from "react";
-import Cardx from "./Cardx";
+import Card from "./Card";
 
 const DummyData = [
   {
@@ -21,7 +21,7 @@ export default function Cards() {
 
   return (
     <div>
-      <Cardx data={DummyData[0]} />
+      <Card data={DummyData[0]} />
     </div>
   );
 }

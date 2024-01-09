@@ -20,12 +20,12 @@ export default function App() {
   return (
     <div>
       {/* {age > 18 ? AcceptCard : DeclineCard} */}
-      <button onClick={() => setCount(count + 1)}>+</button>
-      {count}
-      <button onClick={() => setCount(count - 1)}>-</button>
       <Header />
       <Cover />
       <Cards />
+      <button onClick={() => setCount(count + 1)}>+</button>
+      {count}
+      <button onClick={() => setCount(count - 1)}>-</button>
     </div>
   );
 }
